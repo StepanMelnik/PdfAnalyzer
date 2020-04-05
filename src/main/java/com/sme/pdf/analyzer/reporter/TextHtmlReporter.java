@@ -1,10 +1,12 @@
 package com.sme.pdf.analyzer.reporter;
 
+import static org.apache.commons.lang3.Validate.isInstanceOf;
+
 import com.sme.pdf.analyzer.model.ILabel;
 import com.sme.pdf.analyzer.model.TextResult;
 
 /**
- * Reporter with html output that uses specifichtml tags to work with fonts.
+ * Reporter with html output that uses specific html tags to work with fonts.
  */
 class TextHtmlReporter extends HtmlReporter
 {
@@ -17,10 +19,7 @@ class TextHtmlReporter extends HtmlReporter
     @Override
     protected String generateLine(ILabel label)
     {
-        if (!TextResult.class.isInstance(label))
-        {
-            throw new IllegalArgumentException("The reporter works with TextResult output only");
-        }
+        isInstanceOf(TextResult.class, label, "The reporter works with TextResult output only");
 
         String text = label.getLabel();
         if (System.lineSeparator().equals(text))

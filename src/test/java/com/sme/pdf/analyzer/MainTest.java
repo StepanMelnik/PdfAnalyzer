@@ -16,6 +16,7 @@ public class MainTest
     }
 
     @Test
+    @Ignore
     public void testFontInHtml() throws Exception
     {
         new Main().run(new String[] {"-source", "test.pdf", "-type", "FONT", "-report", "HTML"});
