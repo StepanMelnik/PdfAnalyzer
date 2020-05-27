@@ -9,8 +9,17 @@ But in reality the font was not embedded properly, because the font used incorre
 
 We did not find a free simple program to analyze all fonts and what font is used per char in pdf file.  
 
+## Build
 
-### Usage
+Clone and install <a href="https://github.com/StepanMelnik/Parent.git">Parent</a> project before building.
+
+### Maven
+> mvn clean install
+
+### Docker
+Check Header in the Dockerfile how to create and run an image of the project.
+
+## Usage
 
 Print help
 > java -jar analyzer-0.0.0.Dev-SNAPSHOT.jar
