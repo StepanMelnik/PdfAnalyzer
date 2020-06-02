@@ -17,7 +17,7 @@ pipeline {
                 sh "mvn clean cobertura:cobertura -Dcobertura.report.format=xml"
                 
                 // Build step
-                sh "mvn clean -B -X"
+                sh "mvn compile -B -X"
                 
                 // Test step
                 sh "mvn test -B -X"
