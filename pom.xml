@@ -57,7 +57,7 @@
 
         <pdfbox.version>2.0.19</pdfbox.version>
         <slf4j.version>1.7.30</slf4j.version>
-        <junit.version>4.13</junit.version>
+        <junit.version>4.13.1</junit.version>
         <commons-cli.version>1.4</commons-cli.version>
         <commons-lang3.version>3.10</commons-lang3.version>
         <commons-io.version>2.6</commons-io.version>
